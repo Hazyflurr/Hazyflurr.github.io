@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barakah Cafe</title>
+  <meta name="description" content="Barakah Cafe in Garden Grove, CA at Islamic Society of Orange County. Fresh coffee and community vibes." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#">Barakah Cafe</a>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="button" href="#booking">Book</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="badge">Garden Grove local, community cafe</p>
+          <h1>Barakah Cafe – Islamic Society of Orange County</h1>
+          <p>Discover the cafe at 9752 13th St, Garden Grove, CA 92844 with halal coffee and warm hospitality.</p>
+          <div class="hero-cta">
+            <a class="button" href="#menu">View Menu</a>
+            <a class="button ghost" href="#booking">Reserve Table</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="highlights container" id="highlights">
+      <article>
+        <h3>Daily Special</h3>
+        <p>Maple latte + avocado toast combo with seasonal jam.</p>
+      </article>
+      <article>
+        <h3>Bestseller</h3>
+        <p>Signature Cortado + walnut cardamom muffin.</p>
+      </article>
+      <article>
+        <h3>Vegan Friendly</h3>
+        <p>Chickpea scramble bowl with roasted veggies.</p>
+      </article>
+    </section>
+
+    <section class="menu container" id="menu">
+      <h2>Menu</h2>
+      <p class="intro">Explore coffee, brunch, bites, and desserts. Filter by dietary choice or price.</p>
+      <div class="menu-filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="vegan">Vegan</button>
+        <button data-filter="gluten-free">Gluten-Free</button>
+        <button data-filter="under10">Under $10</button>
+      </div>
+
+      <div id="menuItems" class="menu-grid">
+        <!-- JS populates -->
+      </div>
+
+      <div class="menu-actions">
+        <a class="button ghost" href="menu.pdf" target="_blank" rel="noopener">Download PDF</a>
+        <a class="button ghost" href="#booking">Reserve Table</a>
+        <a class="button" href="https://order.getrevi.com/barakah-cafe-875" target="_blank" rel="noopener">Order Online (Revi)</a>
+      </div>
+    </section>
+
+    <section class="gallery container" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="poo.PNG" alt="Coffee and croissant on wooden table" loading="lazy" />
+        <img src="GAL.PNG" alt="Barista making espresso" loading="lazy" />
+        <img src="gallery-1769117833055-ir9dxa7gil.PNG" alt="Cafe interior with plants" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>Our Story</h2>
+      <p>Barakah Cafe is the community cafe at Islamic Society of Orange County serving Garden Grove and nearby neighborhoods. We focus on thoughtful hospitality, halal coffee, and fresh prepared fare in a welcoming atmosphere.</p>
+      <ul>
+        <li>Small-batch coffee roasts</li>
+        <li>Farm-to-table ingredients</li>
+        <li>Community events and workshops</li>
+      </ul>
+    </section>
+
+    <section class="visit container" id="visit">
+      <h2>Visit Us</h2>
+      <div class="visit-grid">
+        <div>
+          <h3>Location</h3>
+          <p>9752 13th St, Garden Grove, CA 92844</p>
+          <p>Islamic Society of Orange County</p>
+          <h3>Hours</h3>
+          <p>Mon-Fri: 7am–6pm<br>Sat-Sun: 8am–5pm</p>
+          <h3>Contact</h3>
+          <p>Phone: (714) 555-0135<br>Email: info@barakahcafe.com</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.501399005425!2d-122.41941518468235!3d37.77492927975996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814c3f271ec5%3A0x1ee10a501d4c5a4f!2sCoffee%20Shop!5e0!3m2!1sen!2sus!4v1610000000000" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="booking container" id="booking">
+      <h2>Reserve a Table</h2>
+      <form id="bookingForm" autocomplete="off">
+        <label>Full name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Date<input type="date" name="date" required /></label>
+        <label>Time<input type="time" name="time" required /></label>
+        <label>Guests<input type="number" name="guests" min="1" max="10" required /></label>
+        <button type="submit" class="button">Send Request</button>
+      </form>
+      <p id="bookingMessage" class="success" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Barakah Cafe • 9752 13th St, Garden Grove, CA 92844</p>
+      <p>Follow us on Instagram: <a href="#">@barakahcafe</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
